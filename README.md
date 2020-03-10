@@ -1,5 +1,5 @@
-# TurtleCoin WooCommerce Extension
-**Tags:** turtlecoin, woocommerce, integration, payment, merchant, cryptocurrency, accept turtlecoin, turtlecoin woocommerce
+# Avrio WooCommerce Extension
+**Tags:** avrio, woocommerce, integration, payment, merchant, cryptocurrency, accept avrio, avrio woocommerce, avriocommerce
 
 **Requires**: WordPress 4.x.x, WooCommerce 3.x.x
 
@@ -9,26 +9,26 @@
 
 **License URI**: http://www.gnu.org/licenses/gpl-3.0.html
  
-TurtleCoin WooCommerce Extension is a WordPress plugin that allows merchants to accept TRTL Shells as payments at WooCommerce-powered online stores.
+Avrio WooCommerce Extension is a WordPress plugin that allows merchants to accept avrio as payments at WooCommerce-powered online stores.
 
 ## Description
 
 Your online store must use the WooCommerce platform (a free WordPress plugin).
-Once you've installed and activated WooCommerce, you may install and activate the TurtleCoin WooCommerce Extension.
+Once you've installed and activated WooCommerce, you may install and activate the Avrio WooCommerce Extension.
 
 **Benefits**
 
-* Accept payments directly into your personal TurtleCoin wallet.
-* Accept payment in TurtleCoin for physical and digital downloadable products.
-* Add a TurtleCoin payments option to your existing online store with alternative main currency.
-* Automatic conversion to TurtleCoin via realtime exchange rate feed and calculation.
+* Accept payments directly into your personal Avrio wallet.
+* Accept payment in Avrio for physical and digital downloadable products.
+* Add a Avrio payments option to your existing online store with alternative main currency.
+* Automatic conversion to Avrio via realtime exchange rate feed and calculation.
 
 ## Dependencies
 
 - WordPress. This can be downloaded from [wordpress.org](https://wordpress.org) or cloning their [github repo](https://github.com/WordPress/WordPress)
 - WooCommerce. This can be downloaded from [wordpress.org](https://wordpress.org/plugins/woocommerce/) or cloning their [github repo](https://github.com/woocommerce/woocommerce)
 - A webserver with the latest versions of PHP and MySQL.
-- A running walletd daemon that is accesible by the webserver. This can be downloaded from the [turtlecoin repo](https://github.com/turtlecoin/turtlecoin). For instructions check out the [turtlecoin-wiki repo](https://github.com/turtlecoin/turtlecoin-wiki/wiki/Getting-Started)
+- A running walletd daemon that is accesible by the webserver. This can be downloaded from the [avrio repo](https://github.com/avrio-project/avrio). For instructions check out the [iki repo](https://github.com/turtlecoin/turtlecoin-wiki/wiki/Getting-Started)
 
 
 ## Installation
@@ -45,11 +45,11 @@ Once you've installed and activated WooCommerce, you may install and activate th
 
 ## Screenshots
 
-### 1. TurtleCoin Checkout Gateway  
-![gateway](https://github.com/turtlecoin/woo-turtle/blob/master/assets/screenshots/gateway.png "TurtleCoin Checkout Gateway")
+### 1. Avrio Checkout Gateway  
+![gateway](https://github.com/avrio-project/avrio-commerce/blob/master/assets/screenshots/gateway.png "Avrio Checkout Gateway")
   
-### 2. TurtleCoin Options  
-![options](https://github.com/turtlecoin/woo-turtle/blob/master/assets/screenshots/options.png "TurtleCoin Options")
+### 2. Avrio Options  
+![options](https://github.com/avrio-project/avrio-commerce/blob/master/assets/screenshots/options.png "Avrio Options")
 
 ## Changelog
 
@@ -63,8 +63,11 @@ Once you've installed and activated WooCommerce, you may install and activate th
 * Updated screenshots
 * Updated Readme
 
-## Contributors
+**0.3**
+* Add support for avrio!
 
+## Contributors
+The turtlecoin team coded the plugin, we simply adapted it to avrio! Give them some appriciation bellow!
 - Fexra
 ```
 TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
