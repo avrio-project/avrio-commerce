@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: TurtleCoin - WooCommerce Gateway
-Plugin URI: http://turtlecoin.lol
-Description: Extends WooCommerce by adding the TurtleCoin Gateway
+Plugin Name: Avrio - WooCommerce Gateway
+Plugin URI: 
+Description: Extends WooCommerce by adding the Avrio Gateway
 Version: 0.3
 Author: fexra
 */
@@ -11,26 +11,26 @@ if(!defined('ABSPATH')) {
 }
 
 //Load Plugin
-add_action('plugins_loaded', 'turtlecoin_init', 0 );
+add_action('plugins_loaded', 'avrio_init', 0 );
 
-function turtlecoin_init() {
+function avrio_init() {
 	if(!class_exists('WC_Payment_Gateway')) return;
 	
-	include_once('include/turtlecoin_payments.php');
+	include_once('include/avrio_payments.php');
 	require_once('library.php');
 
-    add_filter( 'woocommerce_payment_gateways', 'turtlecoin_gateway');
-	function turtlecoin_gateway( $methods ) {
-		$methods[] = 'Turtlecoin_Gateway';
+    add_filter( 'woocommerce_payment_gateways', 'avrio_gateway');
+	function avrio_gateway( $methods ) {
+		$methods[] = 'Avrio_Gateway';
 		return $methods;
 	}
 }
 
 //Add action link
-add_filter('plugin_action_links_' . plugin_basename( __FILE__ ), 'turtlecoin_payment');
+add_filter('plugin_action_links_' . plugin_basename( __FILE__ ), 'avrio_payment');
 
-function turtlecoin_payment($links) {
-	$plugin_links = array('<a href="' . admin_url('admin.php?page=wc-settings&tab=checkout') . '">' . __('Settings', 'turtlecoin_payment') . '</a>',);
+function avrio_payment($links) {
+	$plugin_links = array('<a href="' . admin_url('admin.php?page=wc-settings&tab=checkout') . '">' . __('Settings', 'avrio_payment') . '</a>',);
 	return array_merge($plugin_links, $links);	
 }
 
@@ -39,13 +39,13 @@ add_filter('woocommerce_currencies','add_my_currency');
 add_filter('woocommerce_currency_symbol','add_my_currency_symbol', 10, 2);
 
 function add_my_currency($currencies) {
-     $currencies['TRTL'] = __('Turtlecoin','woocommerce');
+     $currencies['AIO'] = __('Avrio','woocommerce');
      return $currencies;
 }
 
 function add_my_currency_symbol($currency_symbol, $currency) {
     switch($currency) {
-        case 'TRTL': $currency_symbol = 'TRTL'; break;
+        case 'AIO': $currency_symbol = 'AIO'; break;
     }
     return $currency_symbol;
 }
@@ -56,7 +56,7 @@ register_activation_hook(__FILE__,'createDatabase');
 function createDatabase() {
 	global $wpdb;
 	$charset_collate = $wpdb->get_charset_collate();
-    $table_name = $wpdb->prefix . 'woocommerce_wooturtle';
+    $table_name = $wpdb->prefix . 'woocommerce_avriocommerce';
     
 	$sql = "CREATE TABLE $table_name (
        `id` INT(32) NOT NULL AUTO_INCREMENT,
