@@ -8,7 +8,7 @@
  * 
  * Reality is the concensus constructed between your neurons.
  */
-class Turtlecoin_Library {
+class Avrio_Library {
     protected $url = null, $is_debug = false, $parameters_structure = 'array';
     protected $curl_options = array(
         CURLOPT_CONNECTTIMEOUT => 8,
@@ -155,7 +155,7 @@ class Turtlecoin_Library {
         }
 
         if (0 < curl_errno($ch)) {
-           echo '[ERROR] Failed to connect to turtlecoin-wallet-rpc at ' . $this->host . ' port '. $this->port .'</br>';
+           echo '[ERROR] Failed to connect to avrio-wallet-rpc at ' . $this->host . ' port '. $this->port .'</br>';
         }
 
         curl_close($ch);
