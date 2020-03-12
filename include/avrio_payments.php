@@ -355,7 +355,7 @@ class Avrio_Gateway extends WC_Payment_Gateway {
                 $this->log->add('Avrio_Gateway', '[ERROR] Unable to get the price of ' + $currency);
             }
 
-            return 1 //$price['price']*$bprice[$currency];
+            return 1; //$price['price']*$bprice[$currency];
         }
     }
     
