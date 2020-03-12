@@ -311,7 +311,7 @@ class Avrio_Gateway extends WC_Payment_Gateway {
             $rounded_amount = $stored_amount[0]->amount;
         }
         else {
-            $AIO_live_price = 1 // use 1 for now as we dont have a exchange yet
+            $AIO_live_price = 1; // use 1 for now as we dont have a exchange yet
             $new_amount = $amount / $AIO_live_price;
             
             //Apply discount
