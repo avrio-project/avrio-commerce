@@ -248,7 +248,7 @@ class Avrio_Gateway extends WC_Payment_Gateway {
                         <div class='content-AIO-payment'>
                             <div class='AIO-amount-send'>
                                 <span class='AIO-label' style='font-weight:bold;'>Amount:</span>
-                                <img src='".plugins_url() . "/woo-turtle/assets/avrio_icon.png' />" . $price . "
+                                <img src='".plugins_url() . "/avrio-commerce/assets/avrio_icon.png' />" . $price . "
                             </div>
                             <br>
                             <div class='AIO-address'>
@@ -262,7 +262,7 @@ class Avrio_Gateway extends WC_Payment_Gateway {
                             </div>
                             <br>
                             <div class='AIO-verification-message' style='width:60%;float:left;text-align:center;'>
-                                <img src=".plugins_url() . "/woo-turtle/assets/".$icon." />
+                                <img src=".plugins_url() . "/avrio-commerce-/assets/".$icon." />
                                 <h4><font color=$color>" . $message . "</font></h4>                    
                             </div>
                             <div class='AIO-qr-code' style='width:40%;float:left;text-align:center;'>
@@ -406,7 +406,7 @@ class Avrio_Gateway extends WC_Payment_Gateway {
         $lastBlockHash = $result[0]->hash;
         $get_payments_method = $this->avrio_daemon->getPayment($lastBlockHash, $payment_id);
         
-        $tAmount = $amount*100;
+        $tAmount = $amount*1000;
         $vAmount = 0;
 
         foreach($get_payments_method["items"] as $item) {
